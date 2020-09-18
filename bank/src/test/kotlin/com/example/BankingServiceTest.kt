@@ -23,6 +23,6 @@ class BankingServiceTest {
 
         val currentAmount = accountService.getDefaultAccount(DataProvider.fromClient).amount.value
 
-        assertEquals(9900.toBigDecimal(), currentAmount)
+        assertEquals(99000.toBigDecimal(), currentAmount)
     }
 }

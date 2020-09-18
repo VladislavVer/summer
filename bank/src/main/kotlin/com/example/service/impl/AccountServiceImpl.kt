@@ -9,13 +9,13 @@ import com.example.service.AccountService
 
 @Component
 class AccountServiceImpl @Autowired constructor(
-    val accountDao: AccountDao
+    private val accountDao: AccountDao
 ): AccountService {
     override fun findAccounts(client: Client): List<Account> =
         accountDao.findAccounts(client)
 
     override fun getDefaultAccount(client: Client): Account =
-        accountDao.findDefaultAccount(client)
+        accountDao.findDefaultAccount(client)!!
 
 
 

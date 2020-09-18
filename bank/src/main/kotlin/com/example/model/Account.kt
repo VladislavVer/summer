@@ -1,7 +1,7 @@
 package com.example.model
 
 data class Account(
-    val amount: Money,
+    var amount: Money,
     val client: Client,
     val isDefault: Boolean
 )
